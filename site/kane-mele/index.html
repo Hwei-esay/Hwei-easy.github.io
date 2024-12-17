@@ -1,0 +1,514 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Haowei Guo">
+      
+      
+      
+        <link rel="prev" href="../favors/">
+      
+      
+        <link rel="next" href="../readme/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Kane Mele Model - Phy-docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Phy-docs" class="md-header__button md-logo" aria-label="Phy-docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Phy-docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kane Mele Model
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Phy-docs" class="md-nav__button md-logo" aria-label="Phy-docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Phy-docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to MkDocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Haldane/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Haldane Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../favors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Favors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Kane Mele Model
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一些教程
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<p><img alt="image" src="https://images.unsplash.com/photo-1554310603-d39d43033735?q=80&amp;w=2670&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" /></p>
+<h1 id="_1">文献阅读</h1>
+<p>文献：<a href="assets/Kane和Mele%20-%202005%20-%20Quantum%20Spin%20Hall%20Effect%20in%20Graphene-20241210145857-fujqh8z.pdf">Kane和Mele - 2005 - Quantum Spin Hall Effect in Graphene.pdf</a></p>
+<p>起因：英文文献逐字逐句读完之后没有留下印象，第二天再打开就不知道讲了一些什么，因此把阅读的感想记录一下。</p>
+<hr />
+<h1 id="_2">摘要：</h1>
+<ul>
+<li>
+<p>我们研究了自旋轨道相互作用对于单平面石墨烯的低能电子结构的影响。</p>
+</li>
+<li>
+<p>我们发现在实验可触及的低温条件下，对称性允许的自旋轨道势能将石墨烯从一个理想的二维半金属态转换为一个量子自旋霍尔绝缘体。</p>
+</li>
+<li>
+<p><span data-type="text" style="color: var(--b3-card-info-color); background-color: var(--b3-card-info-background);">这种非平常的物质电子态在体中是有能隙的，并且支持在在样品边界的无带隙的边缘态的自旋和电荷的传输。边缘态是非手性的，但是他们对于无序是不敏感的，因为他们的方向性是和自旋相关的。</span></p>
+</li>
+<li>
+<p>本文计算了自旋和电荷在边缘态的电导，讨论了温度、化学式、rashba耦合、无序和对称性破缺场。</p>
+</li>
+</ul>
+<h1 id="_3">正文：</h1>
+<ul>
+<li>
+<p>本文我们展示了<span data-type="text" style="background-color: var(--b3-card-warning-background); color: var(--b3-card-warning-color);">在</span><strong>充分低的能量下</strong><span data-type="text" style="background-color: var(--b3-card-warning-background); color: var(--b3-card-warning-color);">，单层石墨烯具有由自旋轨道相互作用产生的能隙导致的量子自旋霍尔效应</span>。我们的动机有两部分。</p>
+</li>
+<li>
+<p>~~首先，Novoselov等人最近报道了单层石墨烯薄膜的制备过程。这些薄膜展示了预期的门控双极性行为，并且具有最高~~​~~<span class="arithmatex"><span class="MathJax_Preview">10^4cm^2/Vs</span><script type="math/tex">10^4cm^2/Vs</script></span>~~​~~的迁移率。因此对石墨烯单层的详细的实验研究现在看来是可行的。我们相信石墨烯单层中的量子自旋霍尔效应在实验可达到的低温下可以观测到。~~</p>
+</li>
+<li>其次，我们将会展示石墨烯单层中的量子自旋霍尔效应<span data-type="text" style="background-color: var(--b3-card-warning-background); color: var(--b3-card-warning-color);">与其他三维立方系统中研究过的自旋霍尔效应不同</span>。因为石墨烯单层中的量子自旋霍尔效应会产生一个与能带绝缘体在<span data-type="text" style="color: var(--b3-font-color7);">拓扑上不同</span>的相。这可能会其他二维自旋霍尔绝缘体材料的研究或者具有层内强自旋轨道相互作用的材料提供一个起点。</li>
+</ul>
+<blockquote>
+<p><strong>充分低的能量</strong>：</p>
+<p>因为室温只有26meV，相比费米面的温度充分低，所以在讨论时考虑充分低的能量
+{: .block-tip }</p>
+</blockquote>
+<p>~~石墨中的自旋轨道相互作用已经被认识了超过40年，并且在在石墨的费米面少数空穴的形成中发挥作用。然而这些效应因为被认为非常小而在很大程度上被忽视并被更大的石墨烯平面之间的耦合掩盖。与拥有有限的费米面的石墨不同，<span data-type="text" style="color: var(--b3-font-color7);">石墨烯单层</span>处于一个可以被低能的小围绕强烈影响的临界的电子态。~~</p>
+<p>‍由于石墨单层没有<strong>层间耦合</strong>，所以能够反映出微弱的、以前被忽略的自旋轨道耦合的效应。</p>
+<p>石墨烯由包含两个碳原子的子晶格的蜂窝晶格组成。这些靠近费米能量的态是位于六边形布里渊区对角的 K 和 K' 点附近的$\pi $轨道。通过写出低能电子波函数，有效质量模型可以如下写出</p>
+<div class="arithmatex">
+<div class="MathJax_Preview">
+\boldsymbol{\Psi(r)}=[(u_{AK},u_{BK}),(u_{AK'},u_{BK'})]\cdot\psi(r) \tag{1}
+</div>
+<script type="math/tex; mode=display">
+\boldsymbol{\Psi(r)}=[(u_{AK},u_{BK}),(u_{AK'},u_{BK'})]\cdot\psi(r) \tag{1}
+</script>
+</div>
+<blockquote>
+<p><strong>Q:什么是K点附近的<span class="arithmatex"><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span>轨道？</strong><br />
+待解决
+{: .block-tip}</p>
+</blockquote>
+<p>这里的<span class="arithmatex"><span class="MathJax_Preview">u_{(A,B)(K,K')}(r) <span class="arithmatex"><span class="MathJax_Preview">描述了位于</span><script type="math/tex">描述了位于</script></span>A,B A,B <span class="arithmatex"><span class="MathJax_Preview">子晶格上的动量</span><script type="math/tex">子晶格上的动量</script></span>k=K,K'k=K,K'</span><script type="math/tex">u_{(A,B)(K,K')}(r) <span class="arithmatex"><span class="MathJax_Preview">描述了位于</span><script type="math/tex">描述了位于</script></span>A,B A,B <span class="arithmatex"><span class="MathJax_Preview">子晶格上的动量</span><script type="math/tex">子晶格上的动量</script></span>k=K,K'k=K,K'</script></span>的基态。<span class="arithmatex"><span class="MathJax_Preview">\psi(r)</span><script type="math/tex">\psi(r)</script></span>是包含四个分量的缓慢变化的<span data-type="text" style="color: var(--b3-font-color7);">包络函数</span>。有效质量哈密顿量可以写成一下形式：</p>
+<div class="arithmatex">
+<div class="MathJax_Preview">
+\mathcal{H}_0=-i\hbar v_F\psi^{\dagger}(\sigma _x \tau_z\partial_x+\sigma _y\partial_y)\psi \tag{2}
+</div>
+<script type="math/tex; mode=display">
+\mathcal{H}_0=-i\hbar v_F\psi^{\dagger}(\sigma _x \tau_z\partial_x+\sigma _y\partial_y)\psi \tag{2}
+</script>
+</div>
+<blockquote>
+<p><strong>包络函数</strong>：</p>
+<p>$$
+  \Psi_n(\boldsymbol{r},t)=\frac{sin\Delta k[\boldsymbol{r}-\boldsymbol{r_c}-\boldsymbol{\nu_n(k_c)}t]/2}{\Delta k[\boldsymbol{r}-\boldsymbol{r_c}-\boldsymbol{\nu_n(k_c)}t]/2}
+  $$
+* 晶体中的布洛赫电子波包可以分成两部分的乘积，一部分是波包中心$k_c $处的<span data-type="text" style="color: var(--b3-font-color6);">Bloch函数</span>，另一部分是<span data-type="text" style="color: var(--b3-font-color8);">包络函数</span>
+* 包络函数描述波包
+* 晶格周期函数描述周期势的作用
+{: .block-tip}</p>
+</blockquote>
+<p>这里的<span class="arithmatex"><span class="MathJax_Preview">\vec{\sigma } <span class="arithmatex"><span class="MathJax_Preview">和</span><script type="math/tex">和</script></span>\vec{\tau} \vec{\tau} <span class="arithmatex"><span class="MathJax_Preview">是</span><script type="math/tex">是</script></span>\sigma_z=\pm1\sigma_z=\pm1</span><script type="math/tex">\vec{\sigma } <span class="arithmatex"><span class="MathJax_Preview">和</span><script type="math/tex">和</script></span>\vec{\tau} \vec{\tau} <span class="arithmatex"><span class="MathJax_Preview">是</span><script type="math/tex">是</script></span>\sigma_z=\pm1\sigma_z=\pm1</script></span>的泡利矩阵，他们描述在<span class="arithmatex"><span class="MathJax_Preview">A(B)</span><script type="math/tex">A(B)</script></span>子晶格的量子态。<span class="arithmatex"><span class="MathJax_Preview">\tau_z=\pm 1</span><script type="math/tex">\tau_z=\pm 1</script></span>描述在<span class="arithmatex"><span class="MathJax_Preview">K(K')</span><script type="math/tex">K(K')</script></span>处的量子态。这个哈密顿量描述<span class="arithmatex"><span class="MathJax_Preview">E(q)=\pm v_F \|q\|</span><script type="math/tex">E(q)=\pm v_F \|q\|</script></span>的没有带隙的量子态。在没有自旋的时候，<span class="arithmatex"><span class="MathJax_Preview">\boldsymbol{q}=0</span><script type="math/tex">\boldsymbol{q}=0</script></span>处的退化是受对称性保护的。唯一有可能添加后会打开能带的项就是<span class="arithmatex"><span class="MathJax_Preview">\sigma_z</span><script type="math/tex">\sigma_z</script></span>或<span class="arithmatex"><span class="MathJax_Preview">\sigma_z \tau_z</span><script type="math/tex">\sigma_z \tau_z</script></span>的比例（？）与交错子晶格势能对应的<span class="arithmatex"><span class="MathJax_Preview">\sigma_z</span><script type="math/tex">\sigma_z</script></span>项在手性对称性下是奇数的（交换<span class="arithmatex"><span class="MathJax_Preview">A,B</span><script type="math/tex">A,B</script></span>子晶格）。<span class="arithmatex"><span class="MathJax_Preview">\sigma_z \tau_z</span><script type="math/tex">\sigma_z \tau_z</script></span>项在手性下是偶数的但是在时间反演对称形下是奇数的（交换<span class="arithmatex"><span class="MathJax_Preview">K,K'</span><script type="math/tex">K,K'</script></span>）。</p>
+<p>‍</p>
+<p>自旋轨道相互作用允许有一个新的项，而这个就是本文研究的<span data-type="text" style="color: var(--b3-font-color8);">重点</span>。</p>
+<div class="arithmatex">
+<div class="MathJax_Preview">
+\mathcal{H}_{SO}=\Delta_{SO}\psi^{\dagger}\sigma_z \tau_z s_z\psi\tag{3}
+</div>
+<script type="math/tex; mode=display">
+\mathcal{H}_{SO}=\Delta_{SO}\psi^{\dagger}\sigma_z \tau_z s_z\psi\tag{3}
+</script>
+</div>
+<p>这里的<span class="arithmatex"><span class="MathJax_Preview">s_z</span><script type="math/tex">s_z</script></span>是代表电子自旋的泡利矩阵。这一项遵从石墨烯的所有对称性并体现对称性。接下来我们将会明确地从微观的自旋轨道相互作用构建这一项并估算它的大小。如果关于平面的镜面对称被保留，那么这是在<span class="arithmatex"><span class="MathJax_Preview">q=0</span><script type="math/tex">q=0</script></span>时唯一被允许的自旋独立项。如果镜面对称被打破，那么<span class="arithmatex"><span class="MathJax_Preview">(s\times p)\cdot \hat{z}</span><script type="math/tex">(s\times p)\cdot \hat{z}</script></span>形式的Rashba项被允许</p>
+<div class="arithmatex">
+<div class="MathJax_Preview">
+\mathcal{H}_R=\lambda_R\psi^{\dagger}(\sigma_x\tau_zs_y-\sigma_ys_x)\psi\tag{4}
+</div>
+<script type="math/tex; mode=display">
+\mathcal{H}_R=\lambda_R\psi^{\dagger}(\sigma_x\tau_zs_y-\sigma_ys_x)\psi\tag{4}
+</script>
+</div>
+<p>对于<span class="arithmatex"><span class="MathJax_Preview">\lambda _R=0</span><script type="math/tex">\lambda _R=0</script></span>，<span class="arithmatex"><span class="MathJax_Preview">\Delta_{SO}</span><script type="math/tex">\Delta_{SO}</script></span>产生一个拥有<span class="arithmatex"><span class="MathJax_Preview">2\Delta_{SO}</span><script type="math/tex">2\Delta_{SO}</script></span>（上下分别距离坐标轴<span class="arithmatex"><span class="MathJax_Preview">\Delta_{SO}</span><script type="math/tex">\Delta_{SO}</script></span>）能隙的<span class="arithmatex"><span class="MathJax_Preview">E(q)=\pm\sqrt{(\hbar v_Fq)^2+\Delta_{SO}^2}</span><script type="math/tex">E(q)=\pm\sqrt{(\hbar v_Fq)^2+\Delta_{SO}^2}</script></span>的色散关系。【色散关系怎么算出来的】</p>
+<p>对于<span class="arithmatex"><span class="MathJax_Preview">0&lt;\lambda_R&lt;\Delta_{SO}</span><script type="math/tex">0<\lambda_R<\Delta_{SO}</script></span>，能隙$2(\Delta_{SO}-\lambda_R) $保持有限。</p>
+<p>对于<span class="arithmatex"><span class="MathJax_Preview">\lambda_R&gt;\Delta_{SO}</span><script type="math/tex">\lambda_R>\Delta_{SO}</script></span>，能隙关闭，电子结构为无带隙半导体的二次色散能带（？）</p>
+<p>在下文的讨论中我们假设<span class="arithmatex"><span class="MathJax_Preview">\lambda_R&lt;\Delta_{SO}</span><script type="math/tex">\lambda_R<\Delta_{SO}</script></span>并且分析这个导致的有能隙的相的属性。文末通过数值估算给出了这一假设的合理性。</p>
+<p>​<img alt="image" src="assets/image-20241210210538-r2uqaeo.png" />​</p>
+<p>由<span class="arithmatex"><span class="MathJax_Preview">\sigma_z\tau_zs_z</span><script type="math/tex">\sigma_z\tau_zs_z</script></span>产生的带隙与<span class="arithmatex"><span class="MathJax_Preview">\sigma_z</span><script type="math/tex">\sigma_z</script></span>或<span class="arithmatex"><span class="MathJax_Preview">\sigma_zs_z</span><script type="math/tex">\sigma_zs_z</script></span>的交错子晶格势能产生的能隙不同。</p>
+<p>后一项中的基态在强耦合时与简单绝缘项绝热连接的，两个子晶格是解耦的。【？】与之相比，<span class="arithmatex"><span class="MathJax_Preview">\sigma_z\tau_zs_z</span><script type="math/tex">\sigma_z\tau_zs_z</script></span>所产生的能带在<span class="arithmatex"><span class="MathJax_Preview">K，K'</span><script type="math/tex">K，K'</script></span>处是反号的。这没有简单的强耦合极限。为了平滑连接<span class="arithmatex"><span class="MathJax_Preview">\sigma_z</span><script type="math/tex">\sigma_z</script></span>和$\sigma_z\tau_zs_z $所产生的态，必须经过一个能隙消失的临界点，将具有不同<span data-type="text" style="color: var(--b3-font-color7);">拓扑序</span>的态分开。</p>
+<p>自旋轨道耦合项作为一个对于（2+1）维的相对论性的场论中的奇偶异常【？】的认识，与Haldane模型相关。分开说，<span class="arithmatex"><span class="MathJax_Preview">s_z=\pm1</span><script type="math/tex">s_z=\pm1</script></span>的自旋的哈密顿量违反了时间反演对称性并且与haldane的无自旋电子模型等效。这个哈密顿量可以使用引入没有净通量的周期性磁场实现。就像haldane展示的，这引起了一个在<span class="arithmatex"><span class="MathJax_Preview">K</span><script type="math/tex">K</script></span>和<span class="arithmatex"><span class="MathJax_Preview">K'</span><script type="math/tex">K'</script></span>处反号的<span class="arithmatex"><span class="MathJax_Preview">\sigma_z\tau_z</span><script type="math/tex">\sigma_z\tau_z</script></span>的能隙。在能量远低于能隙处，这一项导致了一个量子化的霍尔电导<span class="arithmatex"><span class="MathJax_Preview">\sigma_{xy}=\pm e^2/h</span><script type="math/tex">\sigma_{xy}=\pm e^2/h</script></span>.这个由<span data-type="text" style="color: var(--b3-font-color7);">Kubo公式</span>计算得到的霍尔电导可以被解释为动量空间的贝里曲率引起的拓扑陈数。因此，对于不同的自旋，自旋轨道耦合项中能隙处的符号是相反的。一个电场会对相反的自旋产生相反的电流，导致自旋电流<span class="arithmatex"><span class="MathJax_Preview">J_s=(\hbar / 2e)(J_\uparrow-J_\downarrow)</span><script type="math/tex">J_s=(\hbar / 2e)(J_\uparrow-J_\downarrow)</script></span>，由量子自旋霍尔电导为特征【？】（表现为量子自旋霍尔电导）</p>
+<div class="arithmatex">
+<div class="MathJax_Preview">
+\sigma_{xy}^s=\frac{e}{2\pi}\tag{5}
+</div>
+<script type="math/tex; mode=display">
+\sigma_{xy}^s=\frac{e}{2\pi}\tag{5}
+</script>
+</div>
+<p>因为自旋电流在实验观测中不耦合，所以很难直接观测到自旋霍尔电导.</p>
+<p>在量子霍尔效应，体拓扑序要求没有能隙的边缘态。我们现在展示石墨烯中也存在没有能隙的边缘态。我们将会从建立<span class="arithmatex"><span class="MathJax_Preview">\lambda_R=0</span><script type="math/tex">\lambda_R=0</script></span>的边缘态开始。我们之后会讨论无能隙的边缘态在<span class="arithmatex"><span class="MathJax_Preview">\lambda_R \ne 0</span><script type="math/tex">\lambda_R \ne 0</script></span>的时候仍然保持。他们对于若电子相互作用和无序具有很强的抵抗力。因此，尽管无能隙边缘态的违反标志了一个与普通绝缘体不同的状态。这个量子自旋霍尔效应态不同于参考文献5中的绝缘体。它也不同于掺杂GaAs中的没有能隙的自旋霍尔效应。</p>
+<p>对于<span class="arithmatex"><span class="MathJax_Preview">\lambda_{R}=0</span><script type="math/tex">\lambda_{R}=0</script></span>，哈密顿量的第二、三项保持<span class="arithmatex"><span class="MathJax_Preview">s_z</span><script type="math/tex">s_z</script></span>【？】，行窃这个无能隙的边缘态遵循Laughlin的讨论。考虑一个很大的圆柱（大于<span class="arithmatex"><span class="MathJax_Preview">\hbar v_F\Delta_{SO }</span><script type="math/tex">\hbar v_F\Delta_{SO }</script></span>）然后绝热地从底部插入量子 相位<span class="arithmatex"><span class="MathJax_Preview">\phi=h/e</span><script type="math/tex">\phi=h/e</script></span>的磁通量子（比<span class="arithmatex"><span class="MathJax_Preview">\Delta_{SO}/\hbar</span><script type="math/tex">\Delta_{SO}/\hbar</script></span>慢）。这样产生的方位角法拉第电场会诱导一个自旋电流，所以自旋可以<span class="arithmatex"><span class="MathJax_Preview">\hbar</span><script type="math/tex">\hbar</script></span>从圆柱体的一段传输到另一端。因为磁场中的方位角变化不能激发粒子跨越能隙<span class="arithmatex"><span class="MathJax_Preview">\Delta_{SO}</span><script type="math/tex">\Delta_{SO}</script></span>，所以两端的能态必须是无能隙的来容纳额外的自旋【什么是额外的自旋？】</p>
+<p>一个对边缘态的明确的描述需要一个能够给出整个布里渊区的能带的模型。跟随haldane模型，我们引入了次临近的紧束缚模型。</p>
+<div class="arithmatex">
+<div class="MathJax_Preview">
+\mathcal{H}=\sum_{&lt;ij&gt;\alpha}tc_{i\alpha}^\dagger c_{j\alpha}+\sum_{&lt;&lt;ij&gt;&gt;\alpha \beta}it_2v_{ij}s_{\alpha \beta}^zc_{i\alpha}^\dagger c_{j\alpha} \tag{6}
+</div>
+<script type="math/tex; mode=display">
+\mathcal{H}=\sum_{<ij>\alpha}tc_{i\alpha}^\dagger c_{j\alpha}+\sum_{<<ij>>\alpha \beta}it_2v_{ij}s_{\alpha \beta}^zc_{i\alpha}^\dagger c_{j\alpha} \tag{6}
+</script>
+</div>
+<p>其中的第一项是通常的最近邻跃迁项。第二项使用自旋相关的振幅将次近邻的原子连接起来。<span class="arithmatex"><span class="MathJax_Preview">v_{ij}=-i_{ji}=\pm1</span><script type="math/tex">v_{ij}=-i_{ji}=\pm1</script></span>，依赖两个最近邻的键<span class="arithmatex"><span class="MathJax_Preview">\boldsymbol{d_1}</span><script type="math/tex">\boldsymbol{d_1}</script></span>和<span class="arithmatex"><span class="MathJax_Preview">\boldsymbol{d_2}</span><script type="math/tex">\boldsymbol{d_2}</script></span>中电子从<span class="arithmatex"><span class="MathJax_Preview">j</span><script type="math/tex">j</script></span>到<span class="arithmatex"><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span>的方向【？】如果电子向左侧（右侧）移动进入次近邻键，则<span class="arithmatex"><span class="MathJax_Preview">v_{ij}=\pm1</span><script type="math/tex">v_{ij}=\pm1</script></span>.自旋依赖的项像这样<span class="arithmatex"><span class="MathJax_Preview">i(d_1\times d_2) \cdot s</span><script type="math/tex">i(d_1\times d_2) \cdot s</script></span>可以写成独立坐标的形式。在低能情况下（5）式减为（2,3），<span class="arithmatex"><span class="MathJax_Preview">\Delta_{SO}=3\sqrt{3}t_2</span><script type="math/tex">\Delta_{SO}=3\sqrt{3}t_2</script></span>。</p>
+<p>边缘态可以通过在条带几何下求解（7）式看到。图1展示了在石墨烯zigzag边缘方向上的一维条带型的能带。K,K'处一维投影处的体能隙清晰可见。此外，两个能带穿过能隙，将K和K'连接起来。这些你呢带局域在条带的边界，每个能带在每个边界退化【？】边缘态不是手性的因为每个边界都有在各个方向传播的态【？】然而就像图2中描述的一样，边缘态都是自旋过滤的，即具有相反自旋的电子沿相反方向传播。相似的边缘态在armchair边缘也存在。尽管在这种情况下K和K'的一维投影都在<span class="arithmatex"><span class="MathJax_Preview">k=0</span><script type="math/tex">k=0</script></span>处。有趣的是，zigzag边缘态中保持<span class="arithmatex"><span class="MathJax_Preview">\Delta_{SO}\rightarrow0</span><script type="math/tex">\Delta_{SO}\rightarrow0</script></span>，他们变得完美地平坦</p>
+<p>‍</p>
+<h1 id="_4">待删除</h1>
+<p><del>固态系统中的自旋电流产生一直是最近强烈关注的焦点。掺杂半导体中的自旋轨道相互作用导致自旋霍尔效应的产生已经被讨论过了，其中的自旋电流沿与施加的电场垂直的方向流动。自旋霍尔效应已经在GaAs中被观测到。 Murakami等人已经证实了一类正方材料是绝缘体，但是仍表现出有限的自旋霍尔导电性。这一类自旋霍尔绝缘体有本征的兴趣，因为它使得自旋电流在没有耗散的情况下产生。</del>
+‍</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>

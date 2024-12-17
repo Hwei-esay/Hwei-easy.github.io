@@ -1,0 +1,56 @@
+site_name: Hwei-docs
+repo_url: https://github.com/Hwei-esay/Hwei-esay.github.io
+site_url: https://phy.com
+repo_name: Hwei-easy
+site_description: Personal Knowledge Reposity
+site_author: Haowei Guo
+copyright: Haowei Guo
+theme:
+  name: material
+  logo: /assets/Simple_atom.png
+  features:
+    - navigation.tabs
+    - navigation.expands
+markdown_extensions:
+  - md_in_html
+  - footnotes
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.arithmatex
+  - admonition
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+use_directory_urls: false
+nav:
+  - 'index.md'
+  - 'changelog.md'
+  - 'Refsites.md'
+  - 'favors.md'
+  - 'readme.md'
+  - 'cmpthesis.md'
+  - 'Haldane.md'
+  - 'kane-mele.md'
+
+nav:
+  - Welcome: index.md
+  - My:
+    - Great Websites: Refsites.md
+    - Tutorials and Errors: readme.md
+    - 可爱的虚拟主播: favors.md
+    - Changelogs: changelog.md
+  - Physics Models:
+    - Haldane: Haldane.md
+    - Kane-mele: kane-mele.md
+  - Homeworks:
+    - CMP Thesis: cmpthesis.md
+  - Dairy:
+    - 日记: dairy/snbf.md
